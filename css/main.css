@@ -116,3 +116,34 @@ body {
 	background-repeat: no-repeat;
 
   }
+
+  /* Удалим стандартные стили кнопки */
+button {
+	appearance: none;
+	background: transparent;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+  }
+
+  /* Создаем псевдоэлемент ::before, который будет представлять искру */
+  button::before {
+	content: "";
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.7); /* Цвет искры (здесь установлен белый с небольшой прозрачностью) */
+	width: 50px; /* Ширина искры */
+	height: 50px; /* Высота искры */
+	border-radius: 90%; /* Делаем круглую искру */
+	transform: translate(-50%, -50%) scale(0); /* Сначала уменьшим размер и скроем искру за кнопкой */
+	pointer-events: none; /* Игнорируем события нажатия для псевдоэлемента */
+	transition: transform 0.5s ease; /* Добавим плавную анимацию изменения размера и положения искры */
+  }
+
+  /* При наведении на кнопку, увеличиваем размер искры, чтобы она покрыла кнопку */
+  button:hover::before {
+	transform: translate(-50%, -50%) scale(3); /* Увеличиваем размер искры (здесь 3 раза) */
+  }
+

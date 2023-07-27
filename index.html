@@ -7,12 +7,12 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/app.js" defer></script>
+	<script src="js/jedicode.js"></script>
 	<script src="libs/rain.js" defer></script>
+
 </head>
 <body>
-
 	<div class="logo" style="background-image: url(img/logo.png);"></div>
-
 	<section class="layers">
 		<div class="layers__container">
 			<div class="layers__item layer-1" style="background-image: url(img/layer-1.png);"></div>
@@ -21,7 +21,7 @@
 				<div class="hero-content">
 					<h1>May the force be with you<span></span></h1>
 					<div class="hero-content__p">A long time ago, in a galaxy far, far away…</div>
-					<button class="button-start">Jedi Code</button>
+					<button class="button-start" onclick="goToJediCodePage()">Jedi Code</button>
 				</div>
 			</div>
 			<div class="layers__item layer-4">
@@ -30,7 +30,13 @@
 			<div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
 			<div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
 		</div>
+
+
 	</section>
+
+
+	<section data-include="partials/index.jedi.html"></section>
 
 </body>
 </html>
+
