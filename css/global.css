@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body {
+	margin: 0;
+	right: 0;
+	padding: 0;
+
+  }
+  
+  :root {
+	--index: calc(1vw + 1vh);
+	--transition: 1.3s cubic-bezier(.05, .5, 0, 1);
+	--main-background-color: #000;
+	--main-text-color: #fff;
+	--neon-border-color: linear-gradient(45deg, #ff00cc, #00ffff);
+	--hero-content-background: linear-gradient(90deg, blue 50%, yellow 50%);
+	--menu-background: #ECEFF1;
+	--menu-item-hover-background: #CFD8DC;
+	--hamburger-menu-background: ghostwhite;
+}
