@@ -5,7 +5,7 @@
 }
 :root {
 	--index: calc(1vw + 1vh);
-	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+	--transition: 1.3s cubic-bezier(.05, .5, 0, 1);
 }
 
 html, body {
@@ -63,7 +63,7 @@ body {
 	justify-content: center;
 }
 .layer-1 {
-	transform: translateZ(-55px) scale(1.06);
+	transform: translateZ(-70px) scale(2.06);
 }
 .layer-2 {
 	transform: translateZ(80px) scale(.88);
