@@ -55,7 +55,7 @@ body {
 }
 .layers__item {
 	position: absolute;
-	inset: -6vw;
+	inset: -8vw;
 	background-size: cover;
 	background-position: center;
 	display: flex;
