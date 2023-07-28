@@ -14,12 +14,8 @@ body {
 
 .fullscreen-image {
   background: url("../img/main-qimg.jfif") center/cover no-repeat;
-  width: calc(
-    100% - 8px
-  );
-  height: calc(
-    100% - 15px
-  );
+  width: calc(100% - 8px);
+  height: calc(100% - 15px);
 }
 
 .neon-border {
