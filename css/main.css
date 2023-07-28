@@ -35,13 +35,11 @@ body {
 	height: 60px;
 	background-repeat: no-repeat;
 	position: absolute;
-	left: 10px; /* Поместить логотип в левый угол */
-	top: 10px; /* Поместить логотип в верхний угол */
+	left: 10px;
+	top: 10px;
 	z-index: 1;
 	background-size: cover;
 }
-
-
 
 .layers {
 	perspective: 1000px;
@@ -57,7 +55,7 @@ body {
 }
 .layers__item {
 	position: absolute;
-	inset: -5vw;
+	inset: -6vw;
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -91,10 +89,9 @@ body {
 	line-height: 1.35em;
 	margin-top: calc(var(--index) * 5.5);
 	background: linear-gradient(90deg, blue 50%,  yellow 50%);
-	-webkit-background-clip: text; /* Для поддержки веб-китовских браузеров */
-	color: transparent; /* Сделаем текст прозрачным, чтобы отобразить градиент */
+	-webkit-background-clip: text;
+	color: transparent;
 }
-
 
 .hero-content span {
 	display: block;
@@ -126,13 +123,10 @@ body {
 }
 
 .layer-2 {
-	background-size: 70%; /* Процент или другое значение, определяющее размер изображения */
-	/* Другие стили для .layer-2 */
+	background-size: 70%;
 	background-repeat: no-repeat;
-
   }
 
-  /* Удалим стандартные стили кнопки */
 button {
 	appearance: none;
 	background: transparent;
@@ -144,24 +138,21 @@ button {
 	overflow: hidden;
   }
 
-  /* Создаем псевдоэлемент ::before, который будет представлять искру */
   button::before {
 	content: "";
 	position: absolute;
-	background-color: rgba(255, 255, 255, 0.7); /* Цвет искры (здесь установлен белый с небольшой прозрачностью) */
-	width: 50px; /* Ширина искры */
-	height: 50px; /* Высота искры */
-	border-radius: 90%; /* Делаем круглую искру */
-	transform: translate(-50%, -50%) scale(0); /* Сначала уменьшим размер и скроем искру за кнопкой */
-	pointer-events: none; /* Игнорируем события нажатия для псевдоэлемента */
-	transition: transform 0.5s ease; /* Добавим плавную анимацию изменения размера и положения искры */
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 50px;
+	height: 50px;
+	border-radius: 90%;
+	transform: translate(-50%, -50%) scale(0);
+	pointer-events: none;
+	transition: transform 0.5s ease;
   }
 
-  /* При наведении на кнопку, увеличиваем размер искры, чтобы она покрыла кнопку */
   button:hover::before {
-	transform: translate(-50%, -50%) scale(3); /* Увеличиваем размер искры (здесь 3 раза) */
+	transform: translate(-50%, -50%) scale(3);
   }
-
 
   #menu__toggle {
 	opacity: 0;
@@ -190,28 +181,20 @@ button {
 	position: fixed;
 	top: 20px;
 	right: 10px;
-
 	width: 30px;
 	height: 26px;
-
 	cursor: pointer;
 	z-index: 1;
-
-
   }
-
 
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
 	display: block;
 	position: absolute;
-
 	width: 100%;
 	height: 2px;
-
 	background-color:ghostwhite ;
-
 	transition-duration: .25s;
   }
   .menu__btn > span::before {
@@ -230,36 +213,24 @@ button {
 	top: 0;
 	right: 0;
 	left: -100%;
-
-
 	width: 180px;
 	height: 50%;
-
 	margin: 0;
 	padding: 20px 0;
-
 	list-style: none;
-
 	background-color: #ECEFF1;
 	box-shadow: 5px 0px 6px rgba(0, 0, 0, .2);
-
 	transition-duration: .25s;
-
-
   }
 
   .menu__item {
 	display: block;
 	padding: 12px 24px;
-
 	color: #333;
-
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 600;
-
 	text-decoration: none;
-
 	transition-duration: .25s;
   }
   .menu__item:hover {
@@ -280,17 +251,17 @@ button {
   .menu__logo-item {
 	display: flex;
 
-	padding: 5px; /* Adjust the padding as needed */
+	padding: 5px;
 	margin-left: 20px;
   }
 
   .menu__logo {
 	display: block;
-	max-width: 100px; /* Adjust the maximum width of the logo */
-	margin: 1px; /* Center the logo horizontally */
+	max-width: 100px;
+	margin: 1px;
   }
 
   .menu__logo img {
 	width: 100%;
-	height: auto; /* Maintain the aspect ratio */
+	height: auto;
   }
