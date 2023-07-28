@@ -1,35 +1,39 @@
 body {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .fullscreen-image-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .fullscreen-image {
-	background: url('../img/main-qimg.jfif') center/cover no-repeat;
-	width: calc(100% - 20px); /* Уменьшаем ширину на 20px (10px слева и 10px справа) для рамки */
-	height: calc(100% - 20px); /* Уменьшаем высоту на 20px (10px сверху и 10px снизу) для рамки */
+  background: url("../img/main-qimg.jfif") center/cover no-repeat;
+  width: calc(
+    100% - 8px
+  ); /* Уменьшаем ширину на 20px (10px слева и 10px справа) для рамки */
+  height: calc(
+    100% - 15px
+  ); /* Уменьшаем высоту на 20px (10px сверху и 10px снизу) для рамки */
 }
 
 .neon-border {
-	border: 3px solid transparent;
-	border-radius: 10px;
-	padding: 10px;
-	box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-	background: linear-gradient(45deg, #ff00cc, #00ffff);
+  border: 3px solid transparent;
+  border-radius: 2px;
+  padding: 2px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(45deg, #ff00cc, #00ffff);
 }
 .fullscreen-image-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh; /* Заменяем height на min-height */
-	padding: 10px;
-	box-sizing: border-box;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Заменяем height на min-height */
+  padding: 1px;
+  box-sizing: border-box;
+}
